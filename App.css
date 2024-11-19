@@ -1,0 +1,108 @@
+body {
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #ffffff; /* White color for the main heading */
+}
+
+.card {
+  border: 1px solid #333; /* Dark border color */
+  background-color: #1e1e1e; /* Dark card background color */
+  cursor: pointer;
+}
+
+.card-title {
+  color: #ffffff; /* White color for the title */
+}
+
+.card-subtitle {
+  color: #ffffff !important; /* White color for the subtitle */
+}
+
+.card-text {
+  color: #e0e0e0; /* Light text color for description */
+}
+
+.card img {
+  height: 170px;
+  width: auto;
+  object-fit: cover;
+}
+
+.card .cover-art{
+  display: flex;
+  justify-content: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body > * {
+  margin: 5px 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+  background-color: #2b2b2b; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.search-bar input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.search-bar input:focus {
+  background-color: #2b2b2b; /* Ensure background stays dark */
+  color: #e0e0e0;
+  border-color: #555; /* Slightly lighter border on focus */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3b82f6; /* Bluish button background */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.search-bar button:active {
+  background-color: #1e40af; /* Even darker blue when pressed */
+}
+
+.search-bar button:focus {
+  background-color: #3b82f6; /* Maintain blue background on focus */
+}
+
+@media (max-width: 576px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
